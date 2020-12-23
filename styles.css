@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* whatsapp */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.my-float{
+	margin-top:16px;
+}
+/* div del header */
+.logotitle{
+    height: 90px;
+    box-shadow: 5px 2px 10px #222;
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    justify-items: center;
+    align-items: center;
+    width: 99vw;
+    margin: auto;
+}
+.title{
+    font-size: 55px;
+    padding-left: 30px;
+    color:#28A745;
+    justify-self: flex-start;
+}
+.botonTitle:hover{
+    text-decoration: none;
+}
+.boton{
+    text-decoration: none;
+}
+/* barra de navegacion */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    list-style: none;
+    width: 85%;
+    margin-top: 20px;
+}
+.boton, .boton1{
+    display: inline-block;
+    background: #fff;
+    color: #181818;
+}
+.boton:hover{
+    transform: scale(1.1,1.1);
+    text-decoration: none;
+    color:#28A745;
+}
+.boton1:hover{
+    text-decoration: none;
+    color: #28A745;
+}
+.facebook:hover{
+    transform: scale(1.3,1.3);
+    transition: all 0.5s;
+}
+.instagram:hover{
+    transform: scale(1.3,1.3);
+    transition: all 0.5s;
+}
+.cart:hover{
+    transform: scale(1.3,1.3);
+    transition: all 0.5s;
+}
+.enlacesHeader{
+    display: flex;
+    justify-content: space-evenly;
+    width: 140px;
+}
+.menu-mobile{
+    display: none;
+}
+/*-----------------------------------------------------------------------------------*/
+/* footer */
+.footer{
+    background: #C7C5C5;
+}
+.epick{
+    color:#181818;
+    text-decoration: underline;
+}
+.epick:hover{
+    color:#28A745;
+}
+.enlacesHeaderFooter{
+    display: none;
+    width: 200px;
+    justify-content: space-around;
+}
+.footer-nav{
+    color: #181818;
+}
+.footer-nav:hover{
+    color:#28A745;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------*/
+/* seccion INDEX */
+.body{
+    background:linear-gradient(to bottom, white, #C7C5C5);
+}
+.carousel-width{
+    width:50vw;
+    margin: auto;
+}
+/*-----------------------------------------------------------------------------------*/
+/* seccion productos*/
+.bloqueContenedor{
+    width: 90vw;
+    margin: auto;
+}
+.containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+    margin: auto;
+    justify-content: center;
+}
+.containerItem{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.imagenRemera{
+    width: 200px;
+}
+.imagenPijama, .imagenBuzo{
+    width: 200px;
+    height: 295px;
+    object-fit: cover;
+}
+.containerInfo{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    width: auto;
+    line-height: 20px;
+    margin: 5px;
+}
+.tituloItem{
+    font-size: 15px;
+    font-weight: 500;
+}
+.precio{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.inform{
+    color:#181818;
+}
+.inform:hover{
+    text-decoration: underline;
+    color:#28A745;
+}
+.emergente{
+    display: flex;
+    justify-content: center;
+}
+.remera--emergente, .pijama--emergente, .buzo--emergente{
+    width: 490px;
+}
+/* Boton de comprar en productos
+.comprar{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-bottom: 3px solid   #111; 
+}
+.comprar:hover{
+    transform: scale(1.1);
+}
+.comprar:active{
+    border-bottom: 0;
+    transform: scale(1);
+} */
+/*-----------------------------------------------------------------------------------*/
+/* seccion de contacto */
+.formulario{
+    width: 600px;
+    float: right;
+}
+.msj{
+    vertical-align: top;
+}
+.check{
+    display: block;
+}
+[type=submit]{
+    margin-top: 30px;
+    margin: 30px;
+    padding: 5px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+[type=submit]{
+    color: #469401;
+}
+[type=submit]:hover{
+    background-color: #55a80c;
+    color: #fff;
+}
+[type=submit]:active{
+    text-decoration: underline;
+}
+/* seccion de Sobre Nosotros */
+.about_us{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    margin: auto;
+    width: 95%;
+}
+.about_us-div-img{
+    width: 100%;
+    margin: 5px;
+}
+.about_us-img{
+    width: 100%;
+}
+/*Preguntas Frecuentes*/
+.faq__title{
+    color: #181818;
+    font-weight: 600;
+}
+.faq__title:hover{
+    color: #28A745;
+}
+.faq__respuesta{
+    color: #181818;
+}
+@media only screen and (max-width: 1200px){
+    .logotitle{
+        grid-template-columns: 35vw 64vw;
+    }
+    .enlacesHeader{
+        display: none;
+    }
+    .enlacesHeaderFooter{
+        display:inline-block;
+    }
+}
+@media only screen and (max-width: 992px){
+    .logotitle{
+        grid-template-columns: 35vw 64vw;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 900px){
+    .logotitle{
+        grid-template-columns: 99vw;
+        grid-template-rows: 1fr 1fr;
+    }
+    .title{
+        font-size:40px;
+    }
+    .menu{
+        margin: 0;
+        padding: 0;
+    }
+    .containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 30px;
+        justify-items: center;
+        margin: auto;
+        justify-content: center;
+        }
+    .bloqueContenedor{
+        width: 95vw;
+    }
+    .imagenRemera{
+        width: 175px;
+    }
+    .imagenPijama, .imagenBuzo{
+        width: 175px;
+        height: 260px;
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width: 600px){
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: inline-block;
+        justify-self: center;
+        width: auto;
+    }
+    .boton:hover{
+        padding: 0;
+        color: #28A745;
+        transform: none;
+    }
+    .containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+    margin: auto;
+    justify-content: center;
+    }
+    .imagenRemera{
+        width: 200px;
+    }
+    .imagenPijama, .imagenBuzo{
+        width: 200px;
+        height: 295px;
+        object-fit: cover;
+    }
+    .about_us{
+        grid-template-columns: 95%;
+        margin: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:530px){
+    .remera--emergente, .pijama--emergente, .buzo--emergente{
+        width: 300px;
+    }
+}
+@media only screen and (max-width:450px){
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: inline-block;
+        justify-self: center;
+        width: auto;
+    }
+    .boton:hover{
+        padding: 0;
+        color: #28A745;
+        transform: none;
+    }
+    .containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+    margin: auto;
+    justify-content: center;
+    }
+    .imagenRemera{
+        width: 150px;
+    }
+    .imagenPijama, .imagenBuzo{
+        width: 150px;
+        height: 220px;
+        object-fit: cover;
+    }
+    .remera--emergente, .pijama--emergente, .buzo--emergente{
+        width: 250px;
+    }
+}
+@media only screen and (max-width:350px){
+    .title{
+        font-size: 30px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: inline-block;
+        justify-self: center;
+        width: auto;
+    }
+    .boton:hover{
+        padding: 0;
+        color: #28A745;
+        transform: none;
+    }
+    .containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
+    display: grid;
+    grid-template-columns:1fr;
+    }
+    .imagenRemera{
+        width:100%;
+    }
+    .imagenPijama, .imagenBuzo{
+        width:100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .remera--emergente, .pijama--emergente, .buzo--emergente{
+        width:100%;
+    }
+    .mapa{
+        width: 80vw;
+    }
+}
