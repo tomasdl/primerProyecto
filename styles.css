@@ -213,7 +213,7 @@
 /*-----------------------------------------------------------------------------------*/
 /* seccion de contacto */
 .formulario{
-    width: 600px;
+    width: 50%;
     float: right;
 }
 .msj{
@@ -340,6 +340,9 @@
 @media only screen and (max-width:530px){
     .remera--emergente, .pijama--emergente, .buzo--emergente{
         width: 300px;
+    }
+    .formulario{
+        width: 100vw;
     }
 }
 @media only screen and (max-width:450px){
