@@ -344,6 +344,20 @@
     .formulario{
         width: 100vw;
     }
+    .float{
+        width:20px;
+        height:20px;
+        bottom:13px;
+        right:13px;
+        border-radius:50%;
+        font-size:13px;
+        box-shadow: 2px 2px 3px #999;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .my-float{
+        margin-top: 0px;
+    }
 }
 @media only screen and (max-width:450px){
     .menu{
