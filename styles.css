@@ -15,12 +15,12 @@
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-    font-size:30px;
+    font-size:40px;
 	box-shadow: 2px 2px 3px #999;
     z-index:100;
 }
 .my-float{
-	margin-top:16px;
+	margin-top:12px;
 }
 /* div del header */
 .logotitle{
@@ -54,12 +54,12 @@
     width: 85%;
     margin-top: 20px;
 }
-.boton, .boton1{
+.boton, .boton1, .hamburg{
     display: inline-block;
     background: #fff;
     color: #181818;
 }
-.boton:hover{
+.boton:hover, .hamburg:hover{
     transform: scale(1.1,1.1);
     text-decoration: none;
     color:#28A745;
@@ -86,7 +86,19 @@
     width: 140px;
 }
 .menu-mobile{
+    float: left;
     display: none;
+}
+.boton-mobile, .boton1-mobile{
+    color: #181818;
+}
+.boton-mobile:hover, .boton1-mobile:hover{
+    color:#28A745;
+    text-decoration: none;
+}
+.div-hamburg{
+    display: flex;
+    justify-content: space-between;
 }
 /*-----------------------------------------------------------------------------------*/
 /* footer */
@@ -228,19 +240,7 @@
     text-decoration: underline;
 }
 /* seccion de Sobre Nosotros */
-.about_us{
-    display: grid;
-    grid-template-columns: 40% 55%;
-    margin: auto;
-    width: 95%;
-}
-.about_us-div-img{
-    width: 100%;
-    margin: 5px;
-}
-.about_us-img{
-    width: 100%;
-}
+
 /*Preguntas Frecuentes*/
 .faq__title{
     color: #181818;
