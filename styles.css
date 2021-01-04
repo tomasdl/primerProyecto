@@ -194,22 +194,19 @@
 .remera--emergente, .pijama--emergente, .buzo--emergente{
     width: 490px;
 }
-/* Boton de comprar en productos
-.comprar{
-    background-color: green;
-    color: white;
-    padding: 5px;
-    margin-left: 10px;
-    border-radius: 5px;
-    border-bottom: 3px solid   #111; 
+/*-----------------------------------------------------------------------------------*/
+
+/*Preguntas Frecuentes*/
+.faq__title{
+    color: #181818;
+    font-weight: 600;
 }
-.comprar:hover{
-    transform: scale(1.1);
+.faq__title:hover{
+    color: #28A745;
 }
-.comprar:active{
-    border-bottom: 0;
-    transform: scale(1);
-} */
+.faq__respuesta{
+    color: #181818;
+}
 /*-----------------------------------------------------------------------------------*/
 /* seccion de contacto */
 .formulario{
@@ -239,19 +236,8 @@
 [type=submit]:active{
     text-decoration: underline;
 }
-/* seccion de Sobre Nosotros */
-
-/*Preguntas Frecuentes*/
-.faq__title{
-    color: #181818;
-    font-weight: 600;
-}
-.faq__title:hover{
-    color: #28A745;
-}
-.faq__respuesta{
-    color: #181818;
-}
+/*-----------------------------------------------------------------------------------*/
+/* Media queries */
 @media only screen and (max-width: 1200px){
     .logotitle{
         grid-template-columns: 35vw 64vw;
