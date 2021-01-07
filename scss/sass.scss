@@ -1,3 +1,6 @@
+$hoverColor: #28A745;
+$fontColor: #222;
+
 *{
     margin: 0;
     padding: 0;
@@ -23,9 +26,9 @@
 	margin-top:12px;
 }
 /* div del header */
-.logotitle{
+.encabezado{
     height: 90px;
-    box-shadow: 5px 2px 10px #222;
+    box-shadow: 5px 2px 10px $fontColor;
     display: grid;
     grid-template-columns: 30% 55% 15%;
     justify-items: center;
@@ -33,16 +36,13 @@
     width: 99vw;
     margin: auto;
 }
-.title{
+.encabezado__titulo-title{
     font-size: 55px;
     padding-left: 30px;
-    color:#28A745;
+    color:$hoverColor;
     justify-self: flex-start;
 }
-.botonTitle:hover{
-    text-decoration: none;
-}
-.boton{
+.encabezado__titulo:hover{
     text-decoration: none;
 }
 /* barra de navegacion */
@@ -54,29 +54,32 @@
     width: 85%;
     margin-top: 20px;
 }
-.boton, .boton1, .hamburg{
+.menu__boton{
+    text-decoration: none;
+}
+.menu__boton, .menu__boton-opcion, .hamburg{
     display: inline-block;
     background: #fff;
-    color: #181818;
+    color: $fontColor;
 }
-.boton:hover, .hamburg:hover{
+.menu__boton:hover, .hamburg:hover{
     transform: scale(1.1,1.1);
     text-decoration: none;
-    color:#28A745;
+    color:$hoverColor;
 }
-.boton1:hover{
+.menu__boton-opcion:hover{
     text-decoration: none;
-    color: #28A745;
+    color: $hoverColor;
 }
 .facebook, .instagram, .cart{
-    color: #222;
+    color: $fontColor;
 }
 .facebook:hover, .instagram:hover, .cart:hover{
     transform: scale(1.3,1.3);
     transition: all 0.5s;
-    color: #28A745;
+    color: $hoverColor;
 }
-.enlacesHeader{
+.encabezado__enlaces{
     display: flex;
     justify-content: space-evenly;
     width: 140px;
@@ -85,11 +88,11 @@
     float: left;
     display: none;
 }
-.boton-mobile, .boton1-mobile{
-    color: #181818;
+.menu-mobile__boton, .menu-mobile__boton-opcion{
+    color: $fontColor;
 }
-.boton-mobile:hover, .boton1-mobile:hover{
-    color:#28A745;
+.menu-mobile__boton:hover, .menu-mobile__boton-opcion:hover{
+    color:$hoverColor;
     text-decoration: none;
 }
 .div-hamburg{
@@ -102,22 +105,22 @@
     background: #C7C5C5;
 }
 .epick{
-    color:#181818;
+    color:$fontColor;
     text-decoration: underline;
 }
 .epick:hover{
-    color:#28A745;
+    color:$hoverColor;
 }
-.enlacesHeaderFooter{
+.encabezado__enlaces-footer{
     display: none;
     width: 200px;
     justify-content: space-around;
 }
 .footer-nav{
-    color: #181818;
+    color: $fontColor;
 }
 .footer-nav:hover{
-    color:#28A745;
+    color:$hoverColor;
     text-decoration: none;
 }
 /*-----------------------------------------------------------------------------------*/
@@ -177,11 +180,11 @@
     margin-top: 5px;
 }
 .inform{
-    color:#181818;
+    color:$fontColor;
 }
 .inform:hover{
     text-decoration: underline;
-    color:#28A745;
+    color:$hoverColor;
 }
 .emergente{
     display: flex;
@@ -194,14 +197,14 @@
 
 /*Preguntas Frecuentes*/
 .faq__title{
-    color: #181818;
+    color: $fontColor;
     font-weight: 600;
 }
 .faq__title:hover{
-    color: #28A745;
+    color: $hoverColor;
 }
 .faq__respuesta{
-    color: #181818;
+    color: $fontColor;
 }
 /*-----------------------------------------------------------------------------------*/
 /* seccion de contacto */
@@ -235,28 +238,28 @@
 /*-----------------------------------------------------------------------------------*/
 /* Media queries */
 @media only screen and (max-width: 1200px){
-    .logotitle{
+    .encabezado{
         grid-template-columns: 35vw 64vw;
     }
-    .enlacesHeader{
+    .encabezado__enlaces{
         display: none;
     }
-    .enlacesHeaderFooter{
+    .encabezado__enlaces-footer{
         display:inline-block;
     }
 }
 @media only screen and (max-width: 992px){
-    .logotitle{
+    .encabezado{
         grid-template-columns: 35vw 64vw;
         justify-content: space-evenly;
     }
 }
 @media only screen and (max-width: 900px){
-    .logotitle{
+    .encabezado{
         grid-template-columns: 99vw;
         grid-template-rows: 1fr 1fr;
     }
-    .title{
+    .encabezado__titulo-title{
         font-size:40px;
     }
     .menu{
@@ -292,9 +295,9 @@
         justify-self: center;
         width: auto;
     }
-    .boton:hover{
+    .menu__boton:hover{
         padding: 0;
-        color: #28A745;
+        color: $hoverColor;
         transform: none;
     }
     .containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
@@ -354,9 +357,9 @@
         justify-self: center;
         width: auto;
     }
-    .boton:hover{
+    .menu__boton:hover{
         padding: 0;
-        color: #28A745;
+        color: $hoverColor;
         transform: none;
     }
     .containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
@@ -380,7 +383,7 @@
     }
 }
 @media only screen and (max-width:350px){
-    .title{
+    .encabezado__titulo-title{
         font-size: 30px;
     }
     .menu{
@@ -391,9 +394,9 @@
         justify-self: center;
         width: auto;
     }
-    .boton:hover{
+    .menu__boton:hover{
         padding: 0;
-        color: #28A745;
+        color: $hoverColor;
         transform: none;
     }
     .containerRemera, .containerPijama, .containerCinturon, .containerBuzo{
