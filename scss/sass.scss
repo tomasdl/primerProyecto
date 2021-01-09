@@ -1,5 +1,6 @@
 $hoverColor: #28A745;
 $fontColor: #222;
+$bgColor: #fff;
 
 *{
     margin: 0;
@@ -15,7 +16,7 @@ $fontColor: #222;
 	bottom:40px;
 	right:40px;
 	background-color:#25d366;
-	color:#FFF;
+	color:$bgColor;
 	border-radius:50px;
 	text-align:center;
     font-size:40px;
@@ -49,7 +50,7 @@ $fontColor: #222;
 .menu{
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: $bgColor;
     list-style: none;
     width: 85%;
     margin-top: 20px;
@@ -57,9 +58,9 @@ $fontColor: #222;
 .menu__boton{
     text-decoration: none;
 }
-.menu__boton, .menu__boton-opcion, .hamburg{
+.menu__boton, .menu__boton-opcion, .hamburg {
     display: inline-block;
-    background: #fff;
+    background: $bgColor;
     color: $fontColor;
 }
 .menu__boton:hover, .hamburg:hover{
@@ -126,7 +127,7 @@ $fontColor: #222;
 /*-----------------------------------------------------------------------------------*/
 /* seccion INDEX */
 .body{
-    background:linear-gradient(to bottom, white, #C7C5C5);
+    background:linear-gradient(to bottom,$bgColor, #C7C5C5);
 }
 .carousel-width{
     width:50vw;
@@ -222,15 +223,15 @@ $fontColor: #222;
     margin-top: 30px;
     margin: 30px;
     padding: 5px 30px;
-    background-color: #fff;
+    background-color: $bgColor;
     border-radius: 5px;
 }
 [type=submit]{
-    color: #469401;
+    color: $hoverColor;
 }
 [type=submit]:hover{
-    background-color: #55a80c;
-    color: #fff;
+    background-color: $hoverColor;
+    color: $bgColor;
 }
 [type=submit]:active{
     text-decoration: underline;
@@ -246,12 +247,6 @@ $fontColor: #222;
     }
     .encabezado__enlaces-footer{
         display:inline-block;
-    }
-}
-@media only screen and (max-width: 992px){
-    .encabezado{
-        grid-template-columns: 35vw 64vw;
-        justify-content: space-evenly;
     }
 }
 @media only screen and (max-width: 900px){
@@ -292,8 +287,7 @@ $fontColor: #222;
     }
     .menu-mobile{
         display: inline-block;
-        justify-self: center;
-        width: auto;
+        color: $fontColor;
     }
     .menu__boton:hover{
         padding: 0;

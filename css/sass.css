@@ -13,7 +13,7 @@
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 40px;
@@ -147,7 +147,7 @@
 /*-----------------------------------------------------------------------------------*/
 /* seccion INDEX */
 .body {
-  background: linear-gradient(to bottom, white, #C7C5C5);
+  background: linear-gradient(to bottom, #fff, #C7C5C5);
 }
 
 .carousel-width {
@@ -267,11 +267,11 @@
 }
 
 [type=submit] {
-  color: #469401;
+  color: #28A745;
 }
 
 [type=submit]:hover {
-  background-color: #55a80c;
+  background-color: #28A745;
   color: #fff;
 }
 
@@ -290,13 +290,6 @@
   }
   .encabezado__enlaces-footer {
     display: inline-block;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .encabezado {
-    grid-template-columns: 35vw 64vw;
-    justify-content: space-evenly;
   }
 }
 
@@ -339,8 +332,7 @@
   }
   .menu-mobile {
     display: inline-block;
-    justify-self: center;
-    width: auto;
+    color: #222;
   }
   .menu__boton:hover {
     padding: 0;
