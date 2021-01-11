@@ -5,62 +5,57 @@
     <meta name="description" content="Compra la ropa moderna más fashion y consegui buenos descuentos a partir de los $2000">
     <meta name="keywords"  content="Watermelon, indumentaria, wm.indumentaria, wm, watermelon madero, wm madero, madero, villa madero, victoria, frano, ropa, ropa victoria frano, productos, coleccion">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0362496f55.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="css/styles.css">    
     <title>Productos | Watermelon Indumentaria</title>
 </head>
 <body>
     <header class="sticky-top bg-white">
-        <div class="logotitle">
-            <a href="index.html" class="botonTitle">
-                <h1 class="title">Watermelon</h1>
+        <div class="encabezado">
+            <a href="index.html" class="encabezado__titulo">
+                <h1 class="encabezado__titulo-title">Watermelon</h1>
             </a>
+            <!-- Menu desktop -->
             <ul class="nav-item dropdown menu">
-                <a class="dropdown-toggle boton" data-toggle="dropdown" href="productos.html">Productos</a>
+                <a class="dropdown-toggle menu__boton" data-toggle="dropdown" href="#">Productos</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item boton1" href="productos.html">Remeras</a>
-                    <a class="dropdown-item boton1" href="productos.html#pijamas">Pijamas</a>
-                    <a class="dropdown-item boton1" href="productos.html#buzos">Buzos</a>
-                    <a class="dropdown-item boton1" href="productos.html#cinturones">Cinturones</a>
+                    <a class="dropdown-item menu__boton-opcion" href="productos.html">Remeras</a>
+                    <a class="dropdown-item menu__boton-opcion" href="productos.html#pijamas">Pijamas</a>
+                    <a class="dropdown-item menu__boton-opcion" href="productos.html#buzos">Buzos</a>
+                    <a class="dropdown-item menu__boton-opcion" href="productos.html#cinturones">Cinturones</a>
                 </div>
-                <li><a href="faq.html" class="boton">Preguntas Frecuentes</a></li>
-                <li><a href="about-us.html" class="boton">Sobre Nosotros</a></li>
-                <li><a href="contacto.html" class="boton">Contacto</a></li>
+                <li><a href="faq.html" class="menu__boton">Preguntas Frecuentes</a></li>
+                <li><a href="about-us.html" class="menu__boton">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="menu__boton">Contacto</a></li>
             </ul>
-            <ul class="nav-item dropdown menu menu-mobile">
-                <a class="dropdown-toggle boton" data-toggle="dropdown"  href="menu">MENU</a>
+            <!-- Menu mobile -->
+            <ul class="nav-item dropdown menu-mobile">
+                    <span class="texto-menu">MENU</span>
+                    <a class="dropdown-toggle hamburg" data-toggle="dropdown"  href="menu-mobile"><i class="fa fa-bars"></i></a> 
                 <div class="dropdown-menu">
-                    <a class="dropdown-toggle boton" data-toggle="dropdown" href="productos.html">Productos</a>
+                    <a class="dropdown-toggle menu-mobile__boton" data-toggle="dropdown" href="productos.html">Productos</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item boton1" href="productos.html">Remeras</a>
-                        <a class="dropdown-item boton1" href="productos.html#pijamas">Pijamas</a>
-                        <a class="dropdown-item boton1" href="productos.html#buzos">Buzos</a>
-                        <a class="dropdown-item boton1" href="productos.html#cinturones">Cinturones</a>
+                        <a class="dropdown-item menu-mobile__boton-opcion" href="productos.html">Remeras</a>
+                        <a class="dropdown-item menu-mobile__boton-opcion" href="productos.html#pijamas">Pijamas</a>
+                        <a class="dropdown-item menu-mobile__boton-opcion" href="productos.html#buzos">Buzos</a>
+                        <a class="dropdown-item menu-mobile__boton-opcion" href="productos.html#cinturones">Cinturones</a>
                     </div>
-                    <li><a href="faq.html" class="boton">Preguntas Frecuentes</a></li>
-                    <li><a href="about-us.html" class="boton">Sobre Nosotros</a></li>
-                    <li><a href="contacto.html" class="boton">Contacto</a></li>
+                    <li><a href="faq.html" class="menu-mobile__boton">Preguntas Frecuentes</a></li>
+                    <li><a href="about-us.html" class="menu-mobile__boton">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="menu-mobile__boton">Contacto</a></li>
                 </div>
             </ul>
-            <div class="enlacesHeader">
-                <a href="#"><img src="img/face.svg" alt="Facebook" width="30px" title="Facebook" class="facebook"></a>
-                <a href="https://www.instagram.com/wm.indumentaria/" target="_blank"><img src="img/insta.svg" alt="Instagram" width="30px" title="Instagram" class="instagram"></a>
-                <a href="#" target="_blank"><img src="img/cart.jpg" alt="carrito de compras" width="30px" class="cart"></a>
+            <div class="encabezado__enlaces">
+                <a href="#"><i class="fab fa-facebook-f fa-2x facebook"></i></a>
+                <a href="https://www.instagram.com/wm.indumentaria/"><i class="fab fa-instagram fa-2x instagram"></i></a>
+                <a href="#"><i class="fas fa-cart-plus fa-2x cart"></i></a>
             </div>
         </div>
     </header>
-    <div class="general">
-<!--<aside> // aside a la izquierda que acompaña en el scroll //
-        <ul>
-            <li><a href="">Remeras</a></li>
-            <li><a href=""></a>Pijamas</li>
-            <li><a href=""></a>Buzos</li>
-            <li><a href=""></a>Cinturones</li>
-        </ul>
-    </aside>-->
-    <main class="productos">
+    <main>
         <div class="bloqueContenedor">
             <h2 class="tituloRemera" id="remeras">Remeras</h2>
             <div class="containerRemera">
@@ -79,21 +74,21 @@
 <!-- Modal -->
                 <div class="modal fade" id="primerModal" tabindex="-1" role="dialog" aria-labelledby="primerModalTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="primerModalLongTitle">Remera Good Vibes negra</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body emergente">
-                            <div class="containerItem">
-                                <button type="button" data-dismiss="modal">
-                                    <img src="imag1/7remera1.jpg" class="remera--emergente" alt="remera">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="primerModalLongTitle">Remera Good Vibes negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
+                            <div class="modal-body emergente">
+                                <div class="containerItem">
+                                    <button type="button" data-dismiss="modal">
+                                        <img src="imag1/7remera1.jpg" class="remera--emergente" alt="remera">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <!---->
@@ -112,21 +107,21 @@
 <!-- Modal -->
                 <div class="modal fade" id="segundoModal" tabindex="-1" role="dialog" aria-labelledby="segundoModalTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="segundoModalLongTitle">Remera Good Vibes Blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body emergente">
-                            <div class="containerItem">
-                                <button type="button" data-dismiss="modal">
-                                    <img src="imag1/7remera2.jpg" class="remera--emergente" alt="remera">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="segundoModalLongTitle">Remera Good Vibes Blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
+                            <div class="modal-body emergente">
+                                <div class="containerItem">
+                                    <button type="button" data-dismiss="modal">
+                                        <img src="imag1/7remera2.jpg" class="remera--emergente" alt="remera">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <!---->
@@ -180,10 +175,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="cuartoModalLongTitle">Remera Vogue blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="cuartoModalLongTitle">Remera Vogue blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -213,10 +208,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="quintoModalLongTitle">Remera estatua turquesa</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="quintoModalLongTitle">Remera estatua turquesa</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -246,10 +241,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="sextoModalLongTitle">Chomba Arco Iris gris</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="sextoModalLongTitle">Chomba Arco Iris gris</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -279,10 +274,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="septimoModalLongTitle">Chomba Arco Iris negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="septimoModalLongTitle">Chomba Arco Iris negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -312,10 +307,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="octavoModalLongTitle">Chomba Arco Iris blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="octavoModalLongTitle">Chomba Arco Iris blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -345,10 +340,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="novenoModalLongTitle">Chomba Mariposa gris</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="novenoModalLongTitle">Chomba Mariposa gris</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -378,10 +373,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="decimoModalLongTitle">Chomba Mariposa negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="decimoModalLongTitle">Chomba Mariposa negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -411,10 +406,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="onceModalLongTitle">Chomba Mariposa blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="onceModalLongTitle">Chomba Mariposa blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -444,10 +439,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="doceModalLongTitle">Chomba Lentes gris</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="doceModalLongTitle">Chomba Lentes gris</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -477,10 +472,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="treceModalLongTitle">Chomba Lentes negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="treceModalLongTitle">Chomba Lentes negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -510,10 +505,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="catorceModalLongTitle">Chomba Lentes blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="catorceModalLongTitle">Chomba Lentes blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -543,10 +538,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="quinceModalLongTitle">Remeron Girl turquesa</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="quinceModalLongTitle">Remeron Girl turquesa</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -576,10 +571,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="dieciseisModalLongTitle">Remera Wild gris</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="dieciseisModalLongTitle">Remera Wild gris</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -609,10 +604,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="diecisieteModalLongTitle">Remera Wild negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="diecisieteModalLongTitle">Remera Wild negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -642,10 +637,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="dieciochoModalLongTitle">Remera Wild blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="dieciochoModalLongTitle">Remera Wild blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -675,10 +670,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="diecinueveModalLongTitle">Remera Moto gris</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="diecinueveModalLongTitle">Remera Moto gris</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -708,10 +703,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="veinteModalLongTitle">Remera Moto negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="veinteModalLongTitle">Remera Moto negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -741,10 +736,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="veintiunoModalLongTitle">Remera Moto blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="veintiunoModalLongTitle">Remera Moto blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -778,10 +773,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="firstModalLongTitle">Pijama Morley gris Puntilla negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="firstModalLongTitle">Pijama Morley gris Puntilla negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -811,10 +806,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="eighthModalLongTitle">Pijama Morley negro Puntilla negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="eighthModalLongTitle">Pijama Morley negro Puntilla negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -844,10 +839,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="thirdModalLongTitle">Pijama Morley blanco Puntilla negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="thirdModalLongTitle">Pijama Morley blanco Puntilla negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -877,10 +872,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="secondModalLongTitle">Pijama Morley rosa Puntilla negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="secondModalLongTitle">Pijama Morley rosa Puntilla negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -910,10 +905,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="ninethModalLongTitle">Pijama Morley rojo Puntilla negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="ninethModalLongTitle">Pijama Morley rojo Puntilla negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -944,10 +939,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="fourthModalLongTitle">Pijama Morley gris Puntilla blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="fourthModalLongTitle">Pijama Morley gris Puntilla blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -977,10 +972,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="fifthModalLongTitle">Pijama Morley negro Puntilla blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="fifthModalLongTitle">Pijama Morley negro Puntilla blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1010,10 +1005,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="sixthModalLongTitle">Pijama Morley blanco Puntilla blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="sixthModalLongTitle">Pijama Morley blanco Puntilla blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1043,10 +1038,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="seventhModalLongTitle">Pijama Morley rosa Puntilla blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="seventhModalLongTitle">Pijama Morley rosa Puntilla blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1076,10 +1071,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="tenthModalLongTitle">Pijama Morley azul Puntilla blanca</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="tenthModalLongTitle">Pijama Morley azul Puntilla blanca</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1109,10 +1104,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="twelfthModalLongTitle">Bata Acetato roja</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="twelfthModalLongTitle">Bata Acetato roja</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1142,10 +1137,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="eleventhModalLongTitle">Bata Acetato negra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="eleventhModalLongTitle">Bata Acetato negra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1175,10 +1170,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="thirteenthModalLongTitle">Bata Acetato violeta</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="thirteenthModalLongTitle">Bata Acetato violeta</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1208,10 +1203,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="sixteenthModalLongTitle">Camisolin Acetato rojo</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="sixteenthModalLongTitle">Camisolin Acetato rojo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1241,10 +1236,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="fourteenthModalLongTitle">Camisolin Acetato negro</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="fourteenthModalLongTitle">Camisolin Acetato negro</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1273,10 +1268,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="fifteenthModalLongTitle">Camisolin Acetato violeta</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="fifteenthModalLongTitle">Camisolin Acetato violeta</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1306,10 +1301,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="seventeenthModalLongTitle">Camisolin Acetato perla</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="seventeenthModalLongTitle">Camisolin Acetato perla</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1339,10 +1334,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="eighteenthModalLongTitle">Pijama Acetato negro</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="eighteenthModalLongTitle">Pijama Acetato negro</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1372,10 +1367,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="nineteenthModalLongTitle">Pijama Acetato violeta</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="nineteenthModalLongTitle">Pijama Acetato violeta</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1405,10 +1400,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="twentiethModalLongTitle">Pijama Acetato rojo</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="twentiethModalLongTitle">Pijama Acetato rojo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1438,10 +1433,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="twentyfirstModalLongTitle">Pijama Acetato rosa</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="twentyfirstModalLongTitle">Pijama Acetato rosa</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1475,10 +1470,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="unoModalLongTitle">Buzo Rústico London</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="unoModalLongTitle">Buzo Rústico London</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1512,10 +1507,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="ersteModalLongTitle">Cinturon negro Liso</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="ersteModalLongTitle">Cinturon negro Liso</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1545,10 +1540,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="zweiteModalLongTitle">Cinturon negro Ojales</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="zweiteModalLongTitle">Cinturon negro Ojales</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1578,10 +1573,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="dritteModalLongTitle">Cinturon Brillos</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                <h5 class="modal-title" id="dritteModalLongTitle">Cinturon Brillos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                             <div class="modal-body emergente">
                                 <div class="containerItem">
@@ -1625,7 +1620,7 @@
             <div class=" text-center col-md-3 col-lg-2 col-xl- mb-4">
                 <h6 class="text-uppercase font-weight-bold">Formas de Envio</h6>
                 <hr class="accent-2 mb-4 mt-0 d-inline-block mx-3" style="width: 60px;">
-                <p>E-pick Logistica</p>
+                <img src="img/e-pick.png" alt="e-picklog" width="120px" class="d-flex m-auto">
                 <small>
                     Visite <a href="https://www.e-pick.com.ar/home" target="_blank"  class="epick">E-pick Logistica</a> y consulte si llega a su zona
                 </small>
@@ -1636,9 +1631,9 @@
                 <p>Villa Madero, Provincia de Buenos Aires</p>
                 <p>vickyfrano@hotmail.com</p>
                 <p>1542123456</p>
-                <div class="enlacesHeaderFooter">
-                    <a href="#"><img src="img/face.svg" alt="Facebook" width="30px" title="Facebook" class="facebook"></a>
-                    <a href="https://www.instagram.com/wm.indumentaria/" target="_blank"><img src="img/insta.svg" alt="Instagram" width="30px" title="Instagram" class="instagram"></a>
+                <div class="encabezado__enlaces-footer">
+                    <a href="#"><i class="fab fa-facebook-f fa-2x facebook"></i></a>
+                    <a href="https://www.instagram.com/wm.indumentaria/"><i class="fab fa-instagram fa-2x instagram"></i></a>
                 </div>
             </div>
             <div class="col-md-3 col-lg-4 col-xl-3">
