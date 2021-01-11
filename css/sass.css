@@ -89,14 +89,7 @@
   color: #28A745;
 }
 
-.encabezado__enlaces {
-  display: flex;
-  justify-content: space-evenly;
-  width: 140px;
-}
-
 .menu-mobile {
-  float: left;
   display: none;
 }
 
@@ -109,30 +102,16 @@
   text-decoration: none;
 }
 
-.div-hamburg {
+.encabezado__enlaces {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 140px;
 }
 
 /*-----------------------------------------------------------------------------------*/
 /* footer */
 .footer {
   background: #C7C5C5;
-}
-
-.epick {
-  color: #222;
-  text-decoration: underline;
-}
-
-.epick:hover {
-  color: #28A745;
-}
-
-.encabezado__enlaces-footer {
-  display: none;
-  width: 200px;
-  justify-content: space-around;
 }
 
 .footer-nav {
@@ -142,6 +121,21 @@
 .footer-nav:hover {
   color: #28A745;
   text-decoration: none;
+}
+
+.encabezado__enlaces-footer {
+  display: none;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.epick {
+  color: #222;
+  text-decoration: underline;
+}
+
+.epick:hover {
+  color: #28A745;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -198,6 +192,15 @@
   margin: 5px;
 }
 
+.inform {
+  color: #222;
+}
+
+.inform:hover {
+  text-decoration: underline;
+  color: #28A745;
+}
+
 .tituloItem {
   font-size: 15px;
   font-weight: 500;
@@ -208,15 +211,6 @@
   font-weight: 700;
   font-size: 20px;
   margin-top: 5px;
-}
-
-.inform {
-  color: #222;
-}
-
-.inform:hover {
-  text-decoration: underline;
-  color: #28A745;
 }
 
 .emergente {
@@ -246,36 +240,24 @@
 /*-----------------------------------------------------------------------------------*/
 /* seccion de contacto */
 .formulario {
-  width: 50%;
-  float: right;
+  width: 100vw;
 }
 
-.msj {
-  vertical-align: top;
-}
-
-.check {
-  display: block;
-}
-
-[type=submit] {
+.enviar {
   margin-top: 30px;
   margin: 30px;
   padding: 5px 30px;
   background-color: #fff;
   border-radius: 5px;
-}
-
-[type=submit] {
   color: #28A745;
 }
 
-[type=submit]:hover {
+.enviar:hover {
   background-color: #28A745;
   color: #fff;
 }
 
-[type=submit]:active {
+.enviar:active {
   text-decoration: underline;
 }
 
@@ -370,9 +352,6 @@
   .remera--emergente, .pijama--emergente, .buzo--emergente {
     width: 300px;
   }
-  .formulario {
-    width: 100vw;
-  }
   .float {
     width: 30px;
     height: 30px;
@@ -386,6 +365,9 @@
   }
   .my-float {
     margin-top: 0px;
+  }
+  .contacto__info {
+    display: none;
   }
 }
 

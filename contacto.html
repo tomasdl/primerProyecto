@@ -55,27 +55,35 @@
             </div>
         </div>
     </header>
-    <main class="contactCenter clearfix">
-        <h2 class="contacto">Contacto</h2>
-        <form class="container formulario">
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" rows="1">
+    <main>
+        <h2 class="h1 text-center mt-3 mb-3 border-bottom">Contacto</h2>
+        <div class="row container-fluid">
+            <div class="col lg-5  mt-5 ml-5 contacto__info">
+                <i class="fas fa-home"></i><p>Direccion: Villa madero, Buenos Aires</p> 
+                <i class="fas fa-phone"></i><p>Telefono: 113451258</p> 
+                <i class="fas fa-at"></i><p>Email: vickyfrano@hotmail.com</p> 
+                <i class="fab fa-instagram font-weight-bold"></i><p>Instagram: @wm-indumentaria</p> 
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="nombre@email.com">
-            </div>
-            <div class="form-group">
-                <label for="telefono">Telefono</label>
-                <input type="number" class="form-control" id="telefono" name="telefono">
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="3"></textarea>
-            </div>
-            <input type="submit" value="Enviar" class="float-right">
-        </form>
+            <form class="container-fluid formulario col lg-7">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" rows="1">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <input type="number" class="form-control" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="float-right enviar">
+            </form>
+        </div>
     </main>
     <div class="wsp">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">

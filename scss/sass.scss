@@ -74,55 +74,50 @@ $bgColor: #fff;
 }
 .facebook, .instagram, .cart{
     color: $fontColor;
+    &:hover{
+        transform: scale(1.3,1.3);
+        transition: all 0.5s;
+        color: $hoverColor;
+    }
 }
-.facebook:hover, .instagram:hover, .cart:hover{
-    transform: scale(1.3,1.3);
-    transition: all 0.5s;
-    color: $hoverColor;
+.menu-mobile{
+    display: none;
+}
+.menu-mobile__boton, .menu-mobile__boton-opcion{
+    color: $fontColor;
+    &:hover{
+        color:$hoverColor;
+        text-decoration: none;
+    }
 }
 .encabezado__enlaces{
     display: flex;
     justify-content: space-evenly;
     width: 140px;
 }
-.menu-mobile{
-    float: left;
-    display: none;
-}
-.menu-mobile__boton, .menu-mobile__boton-opcion{
-    color: $fontColor;
-}
-.menu-mobile__boton:hover, .menu-mobile__boton-opcion:hover{
-    color:$hoverColor;
-    text-decoration: none;
-}
-.div-hamburg{
-    display: flex;
-    justify-content: space-between;
-}
 /*-----------------------------------------------------------------------------------*/
 /* footer */
 .footer{
     background: #C7C5C5;
 }
-.epick{
-    color:$fontColor;
-    text-decoration: underline;
-}
-.epick:hover{
-    color:$hoverColor;
+.footer-nav{
+    color: $fontColor;
+    &:hover{
+        color:$hoverColor;
+        text-decoration: none;
+    }
 }
 .encabezado__enlaces-footer{
     display: none;
     width: 200px;
     justify-content: space-around;
 }
-.footer-nav{
-    color: $fontColor;
-}
-.footer-nav:hover{
-    color:$hoverColor;
-    text-decoration: none;
+.epick{
+    color:$fontColor;
+    text-decoration: underline;
+    &:hover{
+        color:$hoverColor;
+    }
 }
 /*-----------------------------------------------------------------------------------*/
 /* seccion INDEX */
@@ -170,6 +165,13 @@ $bgColor: #fff;
     line-height: 20px;
     margin: 5px;
 }
+.inform{
+    color:$fontColor;
+    &:hover{
+        text-decoration: underline;
+    color:$hoverColor;
+    }
+}
 .tituloItem{
     font-size: 15px;
     font-weight: 500;
@@ -179,13 +181,6 @@ $bgColor: #fff;
     font-weight: 700;
     font-size: 20px;
     margin-top: 5px;
-}
-.inform{
-    color:$fontColor;
-}
-.inform:hover{
-    text-decoration: underline;
-    color:$hoverColor;
 }
 .emergente{
     display: flex;
@@ -200,9 +195,9 @@ $bgColor: #fff;
 .faq__title{
     color: $fontColor;
     font-weight: 600;
-}
-.faq__title:hover{
-    color: $hoverColor;
+    &:hover{
+        color: $hoverColor;
+    }
 }
 .faq__respuesta{
     color: $fontColor;
@@ -210,32 +205,24 @@ $bgColor: #fff;
 /*-----------------------------------------------------------------------------------*/
 /* seccion de contacto */
 .formulario{
-    width: 50%;
-    float: right;
+    width: 100vw;
 }
-.msj{
-    vertical-align: top;
-}
-.check{
-    display: block;
-}
-[type=submit]{
+.enviar{
     margin-top: 30px;
     margin: 30px;
     padding: 5px 30px;
     background-color: $bgColor;
     border-radius: 5px;
-}
-[type=submit]{
     color: $hoverColor;
+    &:hover{
+        background-color: $hoverColor;
+        color: $bgColor;
+    }
+    &:active{
+        text-decoration: underline;
+    }
 }
-[type=submit]:hover{
-    background-color: $hoverColor;
-    color: $bgColor;
-}
-[type=submit]:active{
-    text-decoration: underline;
-}
+
 /*-----------------------------------------------------------------------------------*/
 /* Media queries */
 @media only screen and (max-width: 1200px){
@@ -324,9 +311,6 @@ $bgColor: #fff;
     .remera--emergente, .pijama--emergente, .buzo--emergente{
         width: 300px;
     }
-    .formulario{
-        width: 100vw;
-    }
     .float{
         width:30px;
         height:30px;
@@ -340,6 +324,9 @@ $bgColor: #fff;
     }
     .my-float{
         margin-top: 0px;
+    }
+    .contacto__info{
+        display: none;
     }
 }
 @media only screen and (max-width:450px){
