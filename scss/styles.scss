@@ -34,7 +34,7 @@ $bgColor: #fff;
     grid-template-columns: 30% 55% 15%;
     justify-items: center;
     align-items: center;
-    width: 99vw;
+    width: 98vw;
     margin: auto;
 }
 .encabezado__titulo-title{
@@ -58,7 +58,10 @@ $bgColor: #fff;
 .menu__boton{
     text-decoration: none;
 }
-.menu__boton, .menu__boton-opcion, .hamburg {
+.menu__boton-div{
+    width: 10rem;
+}
+.menu__boton, .menu__boton-opcion, .hamburg{ 
     display: inline-block;
     background: $bgColor;
     color: $fontColor;
@@ -89,6 +92,19 @@ $bgColor: #fff;
         color:$hoverColor;
         text-decoration: none;
     }
+}
+.menu-mobile__boton{
+    padding: 4px 24px;
+}
+.menu-mobile__div{
+    background-color: $bgColor;
+    margin: 2px 0 0;
+    padding: 8px 0;
+    border-radius: .5rem;
+    line-height: 2rem;
+}
+.boton{
+    padding: 3px 10px;
 }
 .encabezado__enlaces{
     display: flex;
@@ -125,8 +141,12 @@ $bgColor: #fff;
     background:linear-gradient(to bottom,$bgColor, #C7C5C5);
 }
 .carousel-width{
-    width:50vw;
-    margin: auto;
+    width: 80vw;
+    margin:auto;
+}
+.img-index{
+    object-fit: cover;
+
 }
 /*-----------------------------------------------------------------------------------*/
 /* seccion productos*/
@@ -268,13 +288,17 @@ $bgColor: #fff;
         object-fit: cover;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 575px){
+    .encabezado__titulo-title{
+        margin: 0;
+    }
     .menu{
         display: none;
     }
     .menu-mobile{
         display: inline-block;
         color: $fontColor;
+        padding: 0;
     }
     .menu__boton:hover{
         padding: 0;
